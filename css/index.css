@@ -1,0 +1,130 @@
+.main_header {
+    height: 14vh;
+}
+
+.main_header, .main_banner {
+    width: 100%;
+}
+
+.main_header_content, .main_banner_content {
+    display: flex;
+    margin: 0 auto;
+    max-width: 1400px;
+}
+
+.logo{
+    flex-basis: 120px;
+    padding: 20px;
+    width: 120px;
+}
+
+.main_header_content_menu {
+    flex-basis: calc(100% - 120px);
+    display: flex;
+    justify-content: flex-end;
+}
+
+.main_header_content_menu ul{
+    display: flex;
+    align-items: stretch;
+}
+
+.main_header_content_menu ul li {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+.main_header_content_menu ul li a {
+    align-items: center;
+    color: #992F37;
+    display: flex;
+    font-size: 1.2em;
+    padding: 20px 50px;
+}
+
+.main_header_content_menu ul li a:hover {
+    background-color: #FF4F5B;
+    border-radius: 30px / 50%;
+    color: #fff;
+}
+
+.main_banner {
+    height: 86vh;
+}
+
+.main_banner_content {
+    width: 100%;
+    height: 100%;
+}
+
+.main_banner_content header {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    width: 100%;
+}
+
+.main_banner_content_l, .main_banner_content_r {
+    display: flex;
+    height: 100%;
+    width: 50%;
+    place-items: center;
+}
+
+.banner_title {
+    color: #992F37;
+}
+
+.banner_title h1 {
+    font-weight: 700;
+    font-size: 3.5em;
+}
+
+.banner_subtitle {
+    display: flex;
+    flex-direction: row;
+    fill: #992F37;
+    height: 30px;
+}
+
+.banner_title h2 {
+    font-weight: 400;
+    font-size: 1.5em;
+    margin-left: 20px;
+}
+
+.banner_subtitle svg {
+    height: 3px;
+    margin: auto 0;
+    width: 30px;
+}
+
+.main_banner_content_r img {
+    max-height: 100%;
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+}
+
+.banner_github {
+    width: 30px;
+    display: flex;
+    flex-direction: column;
+    margin-right: 20px;
+}
+
+.linha_ponto, .banner_github_icon {
+    fill: #992F37;
+}
+
+.linha_ponto {
+    width: 5px;
+    margin: 0 auto;
+}
+
+.banner_github_icon {
+    width: 30px;
+    height: 30px;
+}
+
