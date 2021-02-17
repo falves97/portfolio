@@ -2,16 +2,16 @@
     height: 14vh;
 }
 
-.main_header, .main_banner, .about, .habilidades {
+.main_header, .main_banner, .about, .habilidades, .contato, .rodape {
     width: 100%;
 }
 
-.main_header_content, .main_banner_content, .about_content, .habilidades_content{
+.main_header_content, .main_banner_content, .about_content, .habilidades_content, .contato_content, .rodape_content {
     display: flex;
     margin: 0 auto;
     max-width: 1400px;
-    width: 100%;
     height: 100%;
+    width: 100%;
 }
 
 .logo{
@@ -136,7 +136,7 @@
     z-index: -1;
 }
 
-.about {
+.about, .habilidades, .contato {
     height: 100vh;
 }
 
@@ -186,10 +186,6 @@
     font-size: 1.2em;
 }
 
-.habilidades {
-    height: 100vh;
-}
-
 .habilidades_content {
     place-content: center;
     justify-content: center;
@@ -220,7 +216,6 @@
 .habilidades_content_art header {
     margin-bottom: 2%;
     display: flex;
-    flex-direction: row;
     align-items: center;
 }
 
@@ -241,7 +236,7 @@
     z-index: 1;
 }
 
-.habilidades_content_icon,.habilidades_content_icon_plus {
+.habilidades_content_icon,.habilidades_content_icon_plus, .contato_content_icon, .rodape_content_icon {
     clip-path: circle(48% at 50% 50%);
     display: flex;
     place-content: center;
@@ -251,13 +246,13 @@
 
 }
 
-.habilidades_content_icon {
+.habilidades_content_icon, .contato_content_icon, .rodape_content_icon {
     background-color: #1A2E35;
     width: 80px;
     height: 80px;
 }
 
-.habilidades_content_icon svg {
+.habilidades_content_icon svg, .contato_content_icon svg, .rodape_content_icon svg {
     text-align: center;
     width: 50px;
     height: 50px;
@@ -272,4 +267,112 @@
 .habilidades_content_icon_plus svg {
     width: 15px;
     height: 15px;
+}
+
+.contato {
+    background-color: #992F37;
+}
+
+.contato_content, .contato_content header, .contato_content_send, .contato_content_send_email, .contato_content_send_mensagem, .contato_content_send_email form {
+    color: #fff;
+    display: flex;
+    place-content: center;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.contato_content header h1 {
+    font-size: 3em;
+    margin-bottom: 10%;
+}
+
+.contato_content_send_email h1, .contato_content_send_mensagem h1 {
+    font-size: 2em;
+}
+
+.contato_content_send_email form input, .contato_content_send_email textarea {
+    background-color: #FF4F5B;
+    border-radius: 5px;
+    color: #fff;
+    margin: 5px 0;
+    text-indent: 10px;
+    width: 90%;
+}
+
+.contato_content_send_email form input {
+    height: 2em;
+    font-size: 1.2em;
+}
+
+.contato_content_send_email textarea {
+    height: 13em;
+    font-size: 1.2em;
+}
+
+::-webkit-input-placeholder  {
+    color:#fff;
+}
+
+input:-moz-placeholder {
+    color:#fff;
+}
+textarea:-moz-placeholder {
+    color:#fff;
+}
+
+.contato_content_send_email {
+    width: 50%;
+}
+
+.contato_content_send_mensagem {
+    width: 45%;
+    padding: 0 2.5%;
+}
+
+.contato_content_send_mensagem p {
+    margin: 30px 0;
+    font-size: 1.2em;
+}
+
+.contato_number {
+    display: flex;
+    place-content: center;
+    align-items: center;
+    flex-direction: row;
+    fill: #fff;
+}
+
+.contato_number .number {
+    color: #fff;
+    font-size: 2em;
+    text-decoration: none;
+}
+
+.contato_number .linha {
+    margin: 0 20px;
+    width: 5px;
+    height: 50px;
+}
+
+.contato_content_icon {
+    margin-right: 10px;
+}
+
+.rodape {
+    background-color: #1A2E35;
+}
+
+.rodape_content {
+    display: flex;
+    color: #fff;
+    place-items: center;
+    justify-content: center;
+    height: 14vh;
+}
+
+.rodape_content_icon {
+    position: relative;
+    left: 30%;
+    margin: 0 5px;
 }
