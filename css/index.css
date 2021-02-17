@@ -2,14 +2,16 @@
     height: 14vh;
 }
 
-.main_header, .main_banner, .about {
+.main_header, .main_banner, .about, .habilidades {
     width: 100%;
 }
 
-.main_header_content, .main_banner_content, .about_content {
+.main_header_content, .main_banner_content, .about_content, .habilidades_content{
     display: flex;
     margin: 0 auto;
     max-width: 1400px;
+    width: 100%;
+    height: 100%;
 }
 
 .logo{
@@ -51,11 +53,6 @@
 
 .main_banner {
     height: 86vh;
-}
-
-.main_banner_content, .about_content {
-    width: 100%;
-    height: 100%;
 }
 
 .main_banner_content header, .about_content header {
@@ -187,4 +184,92 @@
 .about_content_r_text p {
     margin-top: 30px;
     font-size: 1.2em;
+}
+
+.habilidades {
+    height: 100vh;
+}
+
+.habilidades_content {
+    place-content: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    color: #1A2E35;
+}
+
+.habilidades_content header h1 {
+    font-size: 3em;
+}
+
+.habilidades_content_body {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.habilidades_content_art {
+    width: 50%;
+    margin-top: 5%;
+}
+
+.habilidades_content_art_l {
+    margin-right: 5%;
+    width: 45%;
+}
+
+.habilidades_content_art header {
+    margin-bottom: 2%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.habilidades_content_art header h1 {
+    font-size: 2em;
+    margin-left: 3%;
+}
+
+.habilidades_content_art p {
+    font-size: 1.2em;
+}
+
+.css3_icon, .javascript_icon, .plus_icon {
+    margin-left: -2%;
+}
+
+.plus_icon {
+    z-index: 1;
+}
+
+.habilidades_content_icon,.habilidades_content_icon_plus {
+    clip-path: circle(48% at 50% 50%);
+    display: flex;
+    place-content: center;
+    justify-content: center;
+    align-items: center;
+    fill: #fff;
+
+}
+
+.habilidades_content_icon {
+    background-color: #1A2E35;
+    width: 80px;
+    height: 80px;
+}
+
+.habilidades_content_icon svg {
+    text-align: center;
+    width: 50px;
+    height: 50px;
+}
+
+.habilidades_content_icon_plus {
+    background-color: #992F37;
+    width: 30px;
+    height: 30px;
+}
+
+.habilidades_content_icon_plus svg {
+    width: 15px;
+    height: 15px;
 }
