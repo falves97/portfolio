@@ -228,6 +228,10 @@
     width: 100%;
 }
 
+.send_email > textarea {
+    height: 200px;
+}
+
 ::-webkit-input-placeholder {
     color: #FFFFFF;
 }
