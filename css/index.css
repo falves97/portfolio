@@ -1,13 +1,17 @@
 .container {
     min-height: 100vh;
-    height: 100vh;
     width: 100%;
 }
 
 .container_content {
     min-height: 100%;
     margin: 0 auto;
+    clear: both;
     width: 70%;
+}
+
+.content_altura_fixa {
+    height: 100vh;
 }
 
 .flex-content {
@@ -26,9 +30,10 @@
 .col_2 {
     min-height: 100%;
     width: 45%;
+    clear: both;
 }
 
-.main_header {
+.main_header, .rodape {
     min-height: 14vh;
     height: 14vh;
 }
@@ -126,6 +131,7 @@
 }
 
 .main_banner {
+    min-height: 86vh;
     height: 86vh;
 }
 
@@ -259,6 +265,4 @@
 
 .rodape {
     background-color: #1A2E35;
-    min-height: 14vh;
-    height: 14vh;
 }
